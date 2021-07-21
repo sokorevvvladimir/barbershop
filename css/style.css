@@ -9,6 +9,12 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+.suptitle-secondary {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(157, 164, 189, 0.6);
+}
 h2.section-title {
   font-family: "Raleway";
   font-weight: bold;
@@ -18,4 +24,19 @@ h2.section-title {
 
 h2.section-title.lighten {
   color: #fff;
+}
+.hero-description {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+a.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+a.nav-link:hover {
+  color: var (--primary-color);
 }
