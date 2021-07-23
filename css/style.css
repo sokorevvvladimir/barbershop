@@ -9,6 +9,10 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 ul {
   list-style: none;
@@ -44,31 +48,79 @@ h2.section-title.lighten {
   font-size: 18px;
   line-height: 1.66;
 }
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
 
 /* Navbar styles here */
 nav.navbar {
-  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 55px 0 55px;
+}
+.nav-holder {
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 nav.navbar .btn-box {
-  display: inline-block;
+  display: flex;
 }
 .nav-links {
   outline: skyblue;
-  display: inline-block;
+  display: flex;
 }
 .nav-links li {
-  display: inline-block;
+  margin: 0 40px;
+  display: flex;
+}
+.logo-img {
+  width: 68px;
+  height: 56px;
+  margin: 0 32px;
 }
 a.nav-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   color: #fff;
+  display: flex;
 }
 a.nav-link:hover,
 .social-link:hover {
   color: var (--primary-color);
 }
+
+/* Main styles here */
+.section-box {
+  padding: 130px 55px;
+  width: 100%;
+}
+
+.about-section,
+.why-us_section {
+  display: flex;
+  justify-content: space-between;
+}
+.about_image-box {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+.about_image-box img {
+  width: 48%;
+}
+.description-container {
+  width: 48%;
+}
+
 p.section-description {
   font-weight: 400;
   font-size: 14px;
@@ -92,29 +144,52 @@ p.section-description {
   border-radius: 25px;
   padding: 12px 20px;
   color: #fff;
+  display: inline-block;
 }
 .primary-btn.darken {
   color: var(--text-primary);
 }
+.slider {
+  width: calc(100% - 155px);
+  background-image: url(../images/slider/slider-one.jpg);
+}
+.sidebar {
+  width: 155px;
+  height: 100vh;
+  background-color: #fff;
+}
 
 /* Price styles */
 .price-list {
-  display: inline-block;
+  display: flex;
+}
+.price-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .price-item p,
 .price-item span {
-  display: inline-block;
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-secondary);
+}
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 48%;
+  padding: 0 100px;
 }
 
 /* Why us styles here */
 .number-box {
   display: inline-block;
   background-color: #f7f7f7;
-  width: 170px;
+  min-width: 170px;
+  width: 48%;
   height: 132px;
+  margin-top: 30px;
 }
 .number-box p,
 .number-box span {
@@ -134,6 +209,11 @@ p.section-description {
   color: var(--text-primary);
 }
 /* Masters styles here */
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 300px;
+}
 .master-card p {
   font-size: 18px;
   line-height: 1.38;
