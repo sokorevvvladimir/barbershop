@@ -32,6 +32,19 @@ a {
 .suptitle-secondary {
   color: var(--text-secondary);
 }
+.suptitle-primary::before,
+.suptitle-secondary::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background: var(--text-primary);
+}
+.suptitle-secondary::before {
+  background: rgba(157, 164, 189, 0.6);
+}
 h2.section-title {
   font-family: "Raleway";
   font-weight: bold;
