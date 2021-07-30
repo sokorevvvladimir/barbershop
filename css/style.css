@@ -165,6 +165,8 @@ p.section-description {
 .slider {
   width: calc(100% - 155px);
   background-image: url(../images/slider/slider-one.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .sidebar {
   width: 155px;
