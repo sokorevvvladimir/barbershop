@@ -87,7 +87,6 @@ nav.navbar .btn-box {
   display: flex;
 }
 .nav-links {
-  outline: skyblue;
   display: flex;
 }
 .nav-links li {
@@ -98,6 +97,7 @@ nav.navbar .btn-box {
   width: 68px;
   height: 56px;
   margin: 0 32px;
+  fill: var(--text-primary);
 }
 a.nav-link {
   font-weight: 600;
@@ -164,9 +164,11 @@ p.section-description {
 }
 .slider {
   width: calc(100% - 155px);
-  background-image: url(../images/slider/slider-one.jpg);
+  background-image: linear-gradient(310deg, rgb(0 0 0 / 21%), #000000d4),
+    url(../images/slider/slider-one.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .sidebar {
   width: 155px;
@@ -175,13 +177,34 @@ p.section-description {
 }
 
 /* Price styles */
+.price-section {
+  background-image: url(../images/price-section/bg.png);
+  background-color: rgba(17, 19, 25, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .price-list {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.price-box {
   display: flex;
 }
-.price-item {
+.price-list:nth-child(odd) {
+  background: linear-gradient(100deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-list:nth-child(even){
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+
+  .price-item {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
 }
 .price-item p,
 .price-item span {
@@ -189,6 +212,8 @@ p.section-description {
   line-height: 1.67;
   color: var(--text-secondary);
 }
+
+/* Why us styles here */
 .number-container {
   display: flex;
   flex-wrap: wrap;
@@ -196,10 +221,7 @@ p.section-description {
   width: 48%;
   padding: 0 100px;
 }
-
-/* Why us styles here */
 .number-box {
-  display: inline-block;
   background-color: #f7f7f7;
   min-width: 170px;
   width: 48%;
@@ -208,7 +230,7 @@ p.section-description {
 }
 .number-box p,
 .number-box span {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
@@ -224,6 +246,10 @@ p.section-description {
   color: var(--text-primary);
 }
 /* Masters styles here */
+.master-box{
+  background-color: rgba(247, 247, 247, 1);
+}
+
 .masters-list {
   display: flex;
   justify-content: space-between;
@@ -240,7 +266,99 @@ p.section-description {
   text-align: center;
   color: #ff6c00;
 }
+.master-social-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 90px;
+  margin-top: 30px;
+}
+.master-social-link{
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.master-social-link:hover svg,
+.master-social-link:focus svg{
+  fill: var(--primary-color);
+}
+
+.master-social-link svg{
+  height: 20px;
+  fill: rgba(48, 48, 48, 1);
+}
 /* Footer styles here */
+.footer {
+  width: 100%;
+  min-height: 640px;
+  height: auto;
+  background-color: var(--secondary-color);
+  padding: 0 50px;
+  display: flex;
+  background-image: url(../images/footer/bg.png);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  color: var(--text-secondary);
+}
+.footer-form,
+.footer-contacts {
+  width: 50%;
+  height: inherit;
+}
+.footer-contacts {
+  padding: 130px 105px 130px 100px;
+}
+
+.contacts-box {
+  padding-left: 50px;
+}
+
+.contacts-box > address {
+  position: relative;
+}
+
+.contacts-box > address::before,
+.contacts-box > a::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -40px;
+  top: 7px;
+}
+
+.contacts-box > address::before {
+  background-image: url(../images/icons/location-icon.svg);
+}
+
+.contacts-box a:nth-of-type(1)::before {
+  background-image: url(../images/icons/tel-icon.svg);
+}
+
+.contacts-box a:nth-last-of-type(1)::before {
+  background-image: url(../images/icons/envelope-icon.svg);
+}
+
+.contacts-box > a {
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.copyright {
+  width: 100%;
+  min-height: 125px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
 .footer-contacts {
   font-weight: normal;
   font-size: 18px;

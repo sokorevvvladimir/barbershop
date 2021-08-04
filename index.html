@@ -28,14 +28,14 @@
         <!-- Navbar -->
         <nav class="navbar">
             <div class="nav-holder">
-                <svg>
-                    <use href="./images/icons/symbol-defs.svg#Logo" class="logo-img"></use>
+                <svg class="logo-img">
+                    <use href="./images/icons/symbol-defs.svg#Logo"></use>
                 </svg>
                 <ul class="nav-links">
                     <li><a href="#about-section"class="nav-link">О нас</a></li>
-                    <li><a href="#"class="nav-link">Услуги и цены</a></li>
+                    <li><a href="#price-section"class="nav-link">Услуги и цены</a></li>
                     <li><a href="#masters-section"class="nav-link">Мастера</a></li>
-                    <li><a href="#"class="nav-link">Контакты</a></li>
+                    <li><a href="#footer"class="nav-link">Контакты</a></li>
                 </ul>
             </div>
             <div class="btn-box">
@@ -83,11 +83,13 @@
             и жаждет перемен. И когда ты попадешь в руки нашего мастера,
             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
             готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <a href="#"class="primary-btn darken">Онлайн запись</a>
+            <a href="#footer"class="primary-btn darken">Онлайн запись</a>
         </div>
 
     </section>
-    <section id="price-section" class="section-box">
+
+    <!-- Price-section -->
+    <section id="price-section" class="section-box price-section">
         <span class="suptitle-secondary">Проведи время в компании лучших мастеров</span>
         <h2 class="section-title lighten">Услуги и цены</h2>
         <div class="price-box">
@@ -156,7 +158,9 @@
             <h3 class="section-subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</h3>
         </div>
     </section>
-    <section id="masters-section" class="section-box">
+
+    <!-- Masters -->
+    <section id="masters-section" class="section-box master-box">
         <span class="suptitle-primary">для настоящих ценителей атмосферы</span>
         <h2 class="section-title">Наши мастера</h2>
         <ul class="masters-list">
@@ -164,22 +168,87 @@
                 <img src="./images/barbers/barber-one.jpg" alt="John Smith">
                 <p>John Smith</p>
                 <span>Extreme Barber</span>
-                <div class="master-social-box"><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a></div>
+                <div class="master-social-box">
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
             </li>
             <li class="master-card">
                 <img src="./images/barbers/barber-two.jpg" alt="Michele Doe">
                 <p>Michele Doe</p>
                 <span>Extreme Barber</span>
-                <div class="master-social-box"><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a></div>
+                <div class="master-social-box">
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
             </li>
             <li class="master-card">
                 <img src="./images/barbers/barber-three.jpg" alt="Alan Black">
                 <p>Alan Black</p>
                 <span>Extreme Barber</span>
-                <div class="master-social-box"><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a></div>
+                <div class="master-social-box">
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="master-social-link">
+                        <svg>
+                            <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
             </li>
         </ul>
     </section>
+    
+    <!-- Gallery -->
     <section class="section-box">
         <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
         <div class="image-gallery">
@@ -193,7 +262,7 @@
     </main>
     <!--Футер-->
     <footer class="footer" id="footer">
-        <div>
+        <div class="footer-form">
             <h2 class="section-title lighten">Онлайн-запись</h2>
             <form action="">
                 <input type="submit" class="primary-button">
@@ -202,7 +271,7 @@
         <div class="footer-contacts">
             <h2 class="section-title lighten">Контакты</h2>
             <div class="contacts-box">
-                <address>ул. Васильковая, 7А
+                <address>ул. Васильковая, 7А<br>
                 Киев, 08132</address>
                 <a href="tel:+380441111111">+38 044 111 11 11</a>
                 <a href="mailto:barbershop@email.com">barbershop@email.com</a>
