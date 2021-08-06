@@ -98,6 +98,9 @@ nav.navbar .btn-box {
   height: 56px;
   margin: 0 32px;
   fill: var(--text-primary);
+  animation-name: infiniteRotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 a.nav-link {
   font-weight: 600;
@@ -254,6 +257,7 @@ p.section-description {
   display: flex;
   justify-content: space-between;
   flex-basis: 300px;
+  text-align: center;
 }
 .master-card p {
   font-size: 18px;
@@ -364,4 +368,15 @@ p.section-description {
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-secondary);
+}
+@keyframes infiniteRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
