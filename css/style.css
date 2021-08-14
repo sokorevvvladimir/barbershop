@@ -459,13 +459,14 @@ textarea.form-field {
 
 .contacts-box {
   padding-left: 40px;
+  margin-bottom: 70px;
 }
 
-.contacts-box > address {
+.contacts-box > a {
   position: relative;
+  font-style: normal;
 }
 
-.contacts-box > address::before,
 .contacts-box > a::before {
   content: "";
   position: absolute;
@@ -475,11 +476,11 @@ textarea.form-field {
   top: 3px;
 }
 
-.contacts-box > address::before {
+.contacts-box a:nth-of-type(1)::before {
   background-image: url(../images/icons/location-icon.svg);
 }
 
-.contacts-box a:nth-of-type(1)::before {
+.contacts-box a:nth-of-type(2)::before {
   background-image: url(../images/icons/tel-icon.svg);
 }
 
@@ -489,9 +490,17 @@ textarea.form-field {
 
 .contacts-box > a {
   position: relative;
+  display: block;
   color: var(--text-secondary);
+  margin-top: 20px;
+}
+.contacts-box > a:nth-last-of-type(1) {
+  text-decoration: underline;
 }
 
+.suptitle-secondary.working-hours {
+  color: #fff;
+}
 .copyright {
   width: 100%;
   min-height: 125px;
@@ -502,12 +511,31 @@ textarea.form-field {
   align-items: center;
   padding: 0 50px;
 }
+
 .footer-contacts {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-secondary);
 }
+
+/* Copyright div here */
+
+.copy-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--text-secondary);
+}
+.social-link {
+  margin-left: 40px;
+  letter-spacing: 0.2em;
+}
+
+/* Animation here */
+
 @keyframes infiniteRotate {
   0% {
     transform: rotate(0deg);
