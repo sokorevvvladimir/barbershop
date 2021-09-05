@@ -16,21 +16,23 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <!--Aside-->
         
         <aside class="sidebar">
             <div class="social-box">
-                <a href="#" class="social-link">Instragram</a>
                 <a href="#" class="social-link">YouTube</a>
+                <a href="#" class="social-link">Instagram</a>
             </div>
         </aside>
         <!-- Navbar -->
         <nav class="navbar">
             <div class="nav-holder">
-                <svg class="logo-img">
-                    <use href="./images/icons/symbol-defs.svg#Logo"></use>
-                </svg>
+                <a href="#header">
+                    <svg class="logo-img">
+                        <use href="./images/icons/symbol-defs.svg#Logo"></use>
+                    </svg>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#about-section"class="nav-link">О нас</a></li>
                     <li><a href="#price-section"class="nav-link">Услуги и цены</a></li>
@@ -47,7 +49,7 @@
         <!--Slider-->
 
         <div class="slider">
-            <div class="slide">
+            <!-- <div class="slide">
                 <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
                 <h1 class="hero-title">BarberShop</h1>
                 <p class="hero-description">Мы эксперты в модных мужских стрижках.
@@ -58,7 +60,7 @@
                 <h1 class="hero-title">BarberShop</h1>
                 <p class="hero-description">Мы эксперты в модных мужских стрижках.
                 Работаем быстро, осторожно и со вкусом.</p>
-            </div>
+            </div> -->
             <div class="slide">
                 <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
                 <h1 class="hero-title">BarberShop</h1>
@@ -69,6 +71,7 @@
     </header>
     <!-- Main content -->
     <main class="layout">
+        <!-- About-section -->
     <section class="section-box about-section" id="about-section">
         <div class="about_image-box">
             <img src="./images/about/about-one.jpg" alt="Намазываем пеной">
@@ -137,21 +140,25 @@
     <!--Why us-->
     <section id="why-section" class="section-box why-us_section">
         <div class="number-container">
-            <div class="number-box">
-                <p>600</p>
-                <span>Довольных клиентов в день</span>
+            <div class="number-box-wrapper-left">
+                <div class="number-box">
+                    <p>600</p>
+                    <span>Довольных клиентов в день</span>
+                </div>
+                <div class="number-box">
+                    <p>50</p>
+                    <span>Наград за отличный сервис</span>
+                </div>
             </div>
-            <div class="number-box">
-                <p>50</p>
-                <span>Наград за отличный сервис</span>
-            </div>
-            <div class="number-box">
-                <p>20</p>
-                <span>Лучших мастеров Киева</span>
-            </div>
-            <div class="number-box">
-                <p>100</p>
-                <span>Подарков постоянным клиентам</span>
+            <div class="number-box-wrapper-right">
+                <div class="number-box">
+                    <p>20</p>
+                    <span>Лучших мастеров Киева</span>
+                </div>
+                <div class="number-box">
+                    <p>100</p>
+                    <span>Подарков постоянным клиентам</span>
+                </div>
             </div>
         </div>
         <div class="description-container">
@@ -286,7 +293,7 @@
     </section>
         
     </main>
-    <!--Футер-->
+    <!--Footer-->
     <footer class="footer" id="footer">
         <div class="footer-form">
             <h2 class="section-title lighten">Онлайн-запись</h2>
@@ -321,10 +328,11 @@
         </div>
 
     </footer>
+    <!-- Copyright-div -->
     <div class="copyright">
         <p class="copy-text">&copy; Copyright <span>2020</span></p>
         <div class="social-box">
-            <a href="#" class="social-link">Instragram</a>
+            <a href="#" class="social-link">Instagram</a>
             <a href="#" class="social-link">YouTube</a>
         </div>
     </div>
