@@ -1,0 +1,28 @@
+.sidebar .social-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transform: rotate(-90deg) translateX(80px);
+  transform-origin: 85px center;
+}
+
+.social-link {
+  transition: color 250ms linear;
+}
+
+.social-box::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  background-color: $text-primary;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+.sidebar {
+  width: 155px;
+  height: 100vh;
+  background-color: #fff;
+}

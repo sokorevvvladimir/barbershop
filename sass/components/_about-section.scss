@@ -1,0 +1,21 @@
+.about_image-box {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_image-box img {
+  width: 48%;
+}
+
+.description-container {
+  width: 48%;
+}
+
+p.section-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  color: $text-primary-lighten;
+  margin-bottom: 40px;
+}

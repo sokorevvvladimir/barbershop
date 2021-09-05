@@ -1,0 +1,69 @@
+.section-box {
+  padding: 130px 55px;
+  width: 100%;
+}
+
+.about-section,
+.why-us_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suptitle-primary {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.suptitle-primary,
+.suptitle-secondary {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: $text-primary;
+
+  margin-bottom: 20px;
+}
+
+.suptitle-secondary {
+  color: $text-secondary-alpha;
+}
+
+.suptitle-primary::before,
+.suptitle-secondary::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background: $text-primary;
+}
+
+.suptitle-secondary::before {
+  background: $text-secondary-alpha;
+}
+
+.section-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $text-primary-lighten;
+  margin-bottom: 20px;
+}
+
+h2.section-title {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $text-primary;
+  margin-bottom: 20px;
+}
+
+h2.section-title.lighten {
+  color: #fff;
+}

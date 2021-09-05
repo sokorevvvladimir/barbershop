@@ -1,0 +1,24 @@
+.copyright {
+  width: 100%;
+  min-height: 125px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.copy-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $text-secondary;
+}
+
+.social-link {
+  margin-left: 40px;
+  letter-spacing: 0.2em;
+}

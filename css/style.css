@@ -35,6 +35,7 @@ p {
 img {
   display: block;
 }
+/* Section */
 .suptitle-primary {
   display: inline-block;
   margin-bottom: 20px;
@@ -88,6 +89,8 @@ h2.section-title {
 h2.section-title.lighten {
   color: #fff;
 }
+
+/* Hero */
 .hero-description {
   color: var(--text-secondary);
   letter-spacing: 0.02em;
@@ -136,7 +139,7 @@ h2.section-title.lighten {
   vertical-align: middle;
   margin-left: 40px;
 }
-/* Navbar styles here */
+/* Header */
 nav.navbar {
   display: flex;
   justify-content: space-between;
@@ -576,6 +579,15 @@ textarea.form-field {
 .suptitle-secondary.working-hours {
   color: #fff;
 }
+
+.footer-contacts {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-secondary);
+}
+
+/* Copyright div here */
 .copyright {
   width: 100%;
   min-height: 125px;
@@ -586,15 +598,6 @@ textarea.form-field {
   align-items: center;
   padding: 0 50px;
 }
-
-.footer-contacts {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  color: var(--text-secondary);
-}
-
-/* Copyright div here */
 
 .copy-text {
   font-style: normal;
