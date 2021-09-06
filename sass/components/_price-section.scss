@@ -7,23 +7,44 @@
 }
 
 .price-list {
-  width: 49%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 40px;
+  width: 100%;
+  padding: 30px 30px;
+  @media screen and (min-width: $tablet) {
+    padding: 30px 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
 .price-box {
-  display: flex;
   margin-top: 24px;
   margin-bottom: 50px;
+  display: block;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.price-box-desktop {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 50px;
+  }
 }
 
-.price-list:nth-child(odd) {
-  background: linear-gradient(100deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+.price-box .price-list {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.price-list:nth-child(even) {
+.price-box-desktop .price-list:nth-child(odd) {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-box-desktop .price-list:nth-child(even) {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
@@ -36,9 +57,14 @@
 
 .price-item p,
 .price-item span {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 2.14;
   color: $text-secondary;
   display: block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }

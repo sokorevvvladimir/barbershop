@@ -22,7 +22,12 @@
 }
 
 .sidebar {
-  width: 155px;
-  height: 100vh;
-  background-color: #fff;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 155px;
+    height: 100vh;
+    background-color: #fff;
+  }
 }

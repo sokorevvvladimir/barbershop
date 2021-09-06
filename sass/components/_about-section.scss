@@ -1,7 +1,14 @@
 .about_image-box {
-  width: 48%;
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .about_image-box img {
@@ -9,7 +16,13 @@
 }
 
 .description-container {
-  width: 48%;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 72%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 48%;
+  }
 }
 
 p.section-description {

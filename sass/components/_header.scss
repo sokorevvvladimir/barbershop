@@ -20,10 +20,18 @@ nav.navbar {
 nav.navbar .btn-box {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav-links {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav-links li:not(:last-child) {
@@ -35,6 +43,10 @@ nav.navbar .btn-box {
   width: 68px;
   height: 56px;
   fill: $text-primary;
+
+  @media screen and (max-width: 767px) {
+    fill: #fff;
+  }
 }
 
 a.nav-link {

@@ -1,12 +1,26 @@
 .section-box {
-  padding: 130px 55px;
+  padding: 84px 31px;
   width: 100%;
+  @media screen and (min-width: $tablet) {
+    padding: 100px 39px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 130px 55px;
+  }
 }
 
-.about-section,
-.why-us_section {
+.about-section {
   display: flex;
   justify-content: space-between;
+}
+.why-us_section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .suptitle-primary {
@@ -21,6 +35,7 @@
   font-size: 11px;
   line-height: 1.36;
   color: $text-primary;
+  letter-spacing: 0.1em;
 
   margin-bottom: 20px;
 }
@@ -47,11 +62,24 @@
 .section-subtitle {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: $text-primary-lighten;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.section-subtitle-why-us {
+  margin-bottom: 44px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 h2.section-title {
@@ -62,6 +90,13 @@ h2.section-title {
   letter-spacing: 0.05em;
   color: $text-primary;
   margin-bottom: 20px;
+}
+
+h2.section-title-about {
+  @media screen and (max-width: $desktop) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 h2.section-title.lighten {
