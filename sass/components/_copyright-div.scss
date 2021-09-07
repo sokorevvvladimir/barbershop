@@ -3,10 +3,26 @@
   min-height: 125px;
   height: auto;
   background-color: #fff;
+  padding: 44px 30px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 55px;
+  }
+}
+
+.copyright .social-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 0 50px;
 }
 
 .copy-text {
@@ -16,9 +32,14 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: $text-secondary;
+  margin-top: 20px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .social-link {
   margin-left: 40px;
   letter-spacing: 0.2em;
+  align-self: flex-end;
 }

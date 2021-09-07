@@ -1,15 +1,15 @@
 .footer {
   width: 100%;
-  min-height: 640px;
+  min-height: 970px;
   height: auto;
   background-color: $color-secondary;
-  padding: 130px 50px;
-  display: flex;
-  background-image: url(../images/footer/bg.png);
-  background-size: 50% 100%;
-  background-repeat: no-repeat;
-  background-position: right top;
+
   color: $text-secondary;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    min-height: 640px;
+  }
 }
 
 .footer .section-title.lighten {
@@ -19,7 +19,10 @@
 .footer-form-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
 }
 
 .form-field {
@@ -40,9 +43,12 @@
 
 .field-label {
   display: inline-block;
-  width: calc(50% - 15px);
+  width: 100%;
   position: relative;
   margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    width: calc(50% - 15px);
+  }
 }
 
 .field-label,
@@ -86,18 +92,24 @@ textarea.form-field {
 
 .footer-form,
 .footer-contacts {
-  width: 50%;
-  height: inherit;
-  padding-right: 50px;
+  padding: 84px 31px;
+  @media screen and (min-width: $desktop) {
+    width: 50%;
+    height: inherit;
+    padding: 130px 50px;
+  }
 }
 
 .footer-contacts {
-  padding: 0 100px;
+  background-image: url(../images/footer/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contacts-box {
   padding-left: 40px;
   margin-bottom: 70px;
+  text-align: left;
 }
 
 .contacts-box > a {
@@ -146,4 +158,8 @@ textarea.form-field {
   font-size: 18px;
   line-height: 1.67;
   color: $text-secondary;
+}
+
+.schedule-box {
+  text-align: left;
 }

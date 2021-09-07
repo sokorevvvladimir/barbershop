@@ -1,12 +1,35 @@
 .image-gallery {
-  display: flex;
-  justify-content: space-between;
   margin-top: 24px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$item-gap});
+    margin-top: calc(-1 * #{$item-gap});
+  }
 }
 
 .img-thumb {
   position: relative;
   overflow: hidden;
+  width: 418px;
+
+  &:not(:last-child) {
+    margin-bottom: $item-gap;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: $item-gap;
+    margin-top: $item-gap;
+    width: 330px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .overlay {
